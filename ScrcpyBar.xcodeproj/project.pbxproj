@@ -11,6 +11,8 @@
 		58500A682774DC1E008E7B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58500A672774DC1E008E7B9D /* ViewController.swift */; };
 		58500A6A2774DC24008E7B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58500A692774DC24008E7B9D /* Assets.xcassets */; };
 		58500A6D2774DC24008E7B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58500A6B2774DC24008E7B9D /* Main.storyboard */; };
+		589506802775024E00BE8720 /* adb in Resources */ = {isa = PBXBuildFile; fileRef = 5895067E2775024E00BE8720 /* adb */; };
+		589506812775024E00BE8720 /* scrcpy in Resources */ = {isa = PBXBuildFile; fileRef = 5895067F2775024E00BE8720 /* scrcpy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,20 @@
 		58500A692774DC24008E7B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58500A6C2774DC24008E7B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58500A6E2774DC24008E7B9D /* ScrcpyBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScrcpyBar.entitlements; sourceTree = "<group>"; };
+		5895067E2775024E00BE8720 /* adb */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = adb; sourceTree = "<group>"; };
+		5895067F2775024E00BE8720 /* scrcpy */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = scrcpy; sourceTree = "<group>"; };
+		5895068B2775144A00BE8720 /* AutoLaunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLaunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		58500A5F2774DC1E008E7B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589506882775144A00BE8720 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				58500A622774DC1E008E7B9D /* ScrcpyBar.app */,
+				5895068B2775144A00BE8720 /* AutoLaunch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +65,7 @@
 		58500A642774DC1E008E7B9D /* ScrcpyBar */ = {
 			isa = PBXGroup;
 			children = (
+				589506822775036000BE8720 /* bin */,
 				58500A652774DC1E008E7B9D /* AppDelegate.swift */,
 				58500A672774DC1E008E7B9D /* ViewController.swift */,
 				58500A692774DC24008E7B9D /* Assets.xcassets */,
@@ -59,6 +73,15 @@
 				58500A6E2774DC24008E7B9D /* ScrcpyBar.entitlements */,
 			);
 			path = ScrcpyBar;
+			sourceTree = "<group>";
+		};
+		589506822775036000BE8720 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				5895067E2775024E00BE8720 /* adb */,
+				5895067F2775024E00BE8720 /* scrcpy */,
+			);
+			path = bin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +104,23 @@
 			productReference = 58500A622774DC1E008E7B9D /* ScrcpyBar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5895068A2775144A00BE8720 /* AutoLaunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589506972775144F00BE8720 /* Build configuration list for PBXNativeTarget "AutoLaunch" */;
+			buildPhases = (
+				589506872775144A00BE8720 /* Sources */,
+				589506882775144A00BE8720 /* Frameworks */,
+				589506892775144A00BE8720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLaunch;
+			productName = AutoLaunch;
+			productReference = 5895068B2775144A00BE8720 /* AutoLaunch.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +132,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					58500A612774DC1E008E7B9D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					5895068A2775144A00BE8720 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -110,6 +153,7 @@
 			projectRoot = "";
 			targets = (
 				58500A612774DC1E008E7B9D /* ScrcpyBar */,
+				5895068A2775144A00BE8720 /* AutoLaunch */,
 			);
 		};
 /* End PBXProject section */
@@ -119,8 +163,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589506802775024E00BE8720 /* adb in Resources */,
 				58500A6A2774DC24008E7B9D /* Assets.xcassets in Resources */,
+				589506812775024E00BE8720 /* scrcpy in Resources */,
 				58500A6D2774DC24008E7B9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589506892775144A00BE8720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +186,13 @@
 			files = (
 				58500A682774DC1E008E7B9D /* ViewController.swift in Sources */,
 				58500A662774DC1E008E7B9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589506872775144A00BE8720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +337,8 @@
 				DEVELOPMENT_TEAM = W333LZDP7Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrcpyBar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -304,6 +366,8 @@
 				DEVELOPMENT_TEAM = W333LZDP7Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrcpyBar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -313,6 +377,60 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fatkhur1960.ScrcpyBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		589506982775144F00BE8720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoLaunch/AutoLaunch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W333LZDP7Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fatkhur1960.AutoLaunch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		589506992775144F00BE8720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoLaunch/AutoLaunch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W333LZDP7Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fatkhur1960.AutoLaunch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,6 +454,15 @@
 			buildConfigurations = (
 				58500A722774DC24008E7B9D /* Debug */,
 				58500A732774DC24008E7B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589506972775144F00BE8720 /* Build configuration list for PBXNativeTarget "AutoLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589506982775144F00BE8720 /* Debug */,
+				589506992775144F00BE8720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
